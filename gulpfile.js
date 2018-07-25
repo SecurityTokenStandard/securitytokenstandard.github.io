@@ -15,12 +15,12 @@ const srcPath = 'source/'; // Path to our source files
 const distPath = './docs/'; // The output files, hosted by GitHub
 
 // Remove the derived folder
-gulp.task('clean', function() {
+gulp.task('clean', function () {
   return del([distPath]);
 })
 
 // Minify images
-gulp.task('imagemin', function() {
+gulp.task('imagemin', function () {
   const src = srcPath + '_/img/**/*';
   const dest = distPath + 'assets/img';
   return gulp.src(src)
@@ -29,7 +29,7 @@ gulp.task('imagemin', function() {
 });
 
 // Compile application sass
-gulp.task('minifyapp', function() {
+gulp.task('minifyapp', function () {
   const src = srcPath + '_/sass/**/*.scss';
   const dest = distPath + 'assets/css/';
   return gulp.src(src)
@@ -43,7 +43,7 @@ gulp.task('minifyapp', function() {
 });
 
 // Copy vendor css
-gulp.task('minifyvendor', function() {
+gulp.task('minifyvendor', function () {
   const src = 'node_modules/bulma/css/bulma.css';
   const dest = distPath + 'assets/css/';
   return gulp.src(src)
@@ -53,7 +53,7 @@ gulp.task('minifyvendor', function() {
 });
 
 // Minify application javascript
-gulp.task('uglifyapp', function() {
+gulp.task('uglifyapp', function () {
   const src = srcPath + '_/js/**/*.js';
   const dest = distPath + 'assets/js/';
   return gulp.src(src)
@@ -63,7 +63,7 @@ gulp.task('uglifyapp', function() {
 });
 
 // Minify vendor javascript
-gulp.task('uglifyvendor', function() {
+gulp.task('uglifyvendor', function () {
   const src = [
     'node_modules/highlightjs/highlight.pack.js',
     'node_modules/highlightjs-solidity/solidity.js',
@@ -76,9 +76,9 @@ gulp.task('uglifyvendor', function() {
 });
 
 // Copy everything except the special folder _
-gulp.task('copyother', function() {
+gulp.task('copyother', function () {
   const f = ['**', '!**/*/', '!**/_/**', '!**/_'];
-  const f2 = function(vinyl) {
+  const f2 = function (vinyl) {
     return !vinyl.isDirectory()
   }
   return gulp.src(srcPath + '**/*')
@@ -102,7 +102,7 @@ gulp.task('dist',
 );
 
 // Watch for changes
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(srcPath + '_/img/**/*', gulp.task('imagemin'));
   gulp.watch(srcPath + '_/sass/**/*.scss', gulp.task('minifyapp'));
   gulp.watch(srcPath + 'node_modules/bulma/css/bulma.css', gulp.task('minifyvendor'));
@@ -112,9 +112,11 @@ gulp.task('watch', function() {
 });
 
 // BrowserSync
-gulp.task('serve', gulp.parallel('watch', function() {
+gulp.task('serve', gulp.parallel('watch', function () {
   browserSync.init({
-      server: distPath
+    server: distPath,
+    files: ['docs/*.html']
+
   });
 }));
 
