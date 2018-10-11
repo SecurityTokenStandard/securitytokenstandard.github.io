@@ -14,9 +14,11 @@
 
   <!-- Default Stylesheet -->
   <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <style>
+  
+  </style>
 
   <script>
     ((window.gitter = {}).chat = {}).options = {
@@ -43,7 +45,7 @@
 
   <section id="intro" class="hero header-section">
 
-    <div class="hero-body">
+    <div class="hero-body has-text-centered">
       <div class="container has-text-centered">
         <figure style="width:500px">
           <div id="bm"> </div>
@@ -51,10 +53,10 @@
         <div id="intro-header-text">
           <h1 id="intro-header">SECURITY TOKEN STANDARD</h1>
         </div>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/securitytokenstandard" data-size="large" aria-label="Follow @securitytokenstandard on GitHub">Follow
-          @securitytokenstandard</a>
-
+       
+        </div>
+        <a class="social_button" href="https://github.com/securitytokenstandard" target="_blank"><i class="fab fa-github"></i> Follow @securitytokenstandard</a>
+        <a class="social_button" href="https://t.me/joinchat/FVjP7kY7D6EUX6GYsCEi1w" target="_blank"><i class="fab fa-telegram"></i> Join Telegram</a>
       </div>
     </div>
 
@@ -68,8 +70,8 @@
         <h3 class="section-subheader">What is a Security Token?</h3>
         <p class="section-text">A Security Token shares many of the characteristics of both fungible (erc20) and non-fungible
           tokens (erc721). Security tokens are designed to represent complete or fractional ownership interests in assets
-          and/or entities. While most tokens have no limitations on who can receive, or participate in the token sale, the
-          security tokens offerings restrict token transfers to verified investors only.
+          and/or entities. While utility tokens have no limitations on who can send or receive the token, security tokens
+          are subject to many restrictions based on identity, jurisdiction and asset category.
         </p>
       </div>
       <!-- /.section-header-text -->
@@ -87,43 +89,24 @@
         <h3 class="section-subheader">How do they differ from utility tokens?</h3>
         <p class="section-text">The concept of utility tokens is fairly well understood in the blockchain space today. Utility
           tokens represent access to a network, and your token purchase represents the ability to buy goods or services from
-          that network — kind of like an arcade token being used to play a game without owning it. Utility tokens give you
+          that network — kind of like purchasing a game token being used to play an arcade machine. Utility tokens give you
           that same type of access but just to a product or service.</p>
         <p class="section-text">On the other hand, security tokens represent complete or fractional ownership in an asset
-          (such as shares in a company, parts of a real-estate asset, artwork, etc). Having a stake in a company, real estate,
+          (such as shares in a company, a real-estate asset, artwork, etc). Having a stake in a company, real estate,
           or intellectual property can all be represented by security tokens. Security tokens offer the benefit of bringing
           significant transparency over traditional paper shares through the use of the blockchain and its associated public
           ledger. Security token structure, distribution, or changes that could affect investors are now accessible to all
           via the blockchain.</p>
 
-        <p class="section-text"> In short, security tokens give the holder an ownership right and potential access to additional
-          benefits such as dividends, voting rights and other benefits that can be provided by the issuer.
+        <p class="section-text"> Security tokens and the digitalised assets they represent ownership will form the backbone of
+          finance 3.0 driving innovation, adoption and accessibility across the financial sector.
         </p>
       </div>
 
 
   </section>
 
-  <section id="sto-ico" class="section">
-    <div class="container has-text-centered">
-
-      <div class="section-header-text">
-        <h3 class="section-subheader">STO vs ICO?</h3>
-        <p class="section-text">An Initial Coin Offering (ICO) is an unregulated method to raise funds for a new blockchain,
-          cryptocurrency, or utility token project. In an ICO, a percentage of the cryptocurrency or utility token is sold
-          to early backers of the project in exchange for fiat or other cryptocurrencies.</p>
-
-        <p class="section-text">An STO is a regulated method to raise funds. Security Tokens are backed by assets (such as
-          a company, real estate, artwork, or shares in a fund).</p>
-
-        <p class="section-text">With that being said, the value of a security token can increase or decrease on the basis
-          of the perceived value of the asset. STOs and Securities provides access to assets that were otherwise not accessible.
-          Forms of ownership are receiving an upgrade from pieces of paper to blockchain-based tokens.
-        </p>
-      </div>
-
-
-  </section>
+  
 
   <section id="with-standard" class="section">
     <div class="container has-text-centered">
@@ -154,7 +137,7 @@
       <div class="section-header-text">
         <h3 class="section-subheader">WITH A STANDARD</h3>
         <p class="section-text">Security Tokens can become the default form for all financial securities. In the same way
-          that the ERC-20 standard helped to create the boom in utility tokens, the Security Token standard will help create
+          that the ERC-20 standard helped to create the boom in utility tokens, the security token standard will help drive
           the boom in security tokens. All participants in the ecosystem will be able to speak the same language and become
           confident building on this new and exciting technology.
         </p>
@@ -179,7 +162,8 @@
           The Security Token Roundtable was held to drive forward the conversation around technical, legal & regulatory opportunities
           and challenges associated with issuing, lifecycle events and the trading of securities on public ledgers. Building
           standards in this space provides the bedrock needed to ramp up adoption and establish regulatory compliance in
-          this massive, brand new use-case for blockchain based public ledgers.
+          this massive and emerging use-case for blockchain based public ledgers.
+
           <a href="https://blog.polymath.network/security-token-roundtable-recap-30e7d371cf14" target="_blank">Click here
             to read more</a>
         </p>
@@ -202,9 +186,18 @@
   <section id="interface-spec" class="section">
     <div class="container has-text-centered">
       <div class="section-header-text">
-        <h3 class="section-subheader">The Security Token Interface</h3>
-        <p class="section-text">A backwards-compatible extension of ERC-20 to bring the multi-trillion dollar securities
-          market to the blockchain.
+        <h3 class="section-subheader">ERC 1400 - Security Token Standard</h3>
+        <p class="section-text">A proposed standard for security tokens - incorporating differentiated ownership, error signalling,
+          document references, gate keeper (operator) access control and issuance / redemption semantics.</p>
+
+        <p class="section-text">Authors: Adam Dossa, Pablo Ruiz, Stephane Gosselin, Fabian Vogelsteller</p>
+
+          <p class="section-text">
+            <a href="https://github.com/ethereum/EIPs/issues/1411" target="_blank">ERC 1400 - Security Token Standard</a>
+          </p>
+          <p class="section-text">
+            <a href="https://github.com/ethereum/EIPs/issues/1410" target="_blank">ERC 1410 - Partially Fungible Token Standard</a>
+          </p>
         </p>
       </div>
       <!-- /.section-header-text -->
@@ -212,20 +205,83 @@
       <div class="container has-text-left">
         <pre>
           <code class="lang-solidity">
-            1 // ----------------------------------------------------------------------------
-            2 // The ST-20 Interface
-            3 //
-            4 // ----------------------------------------------------------------------------
-            5 //
-            6 contract IST20 { 
-            7   // off-chain hash 
-            8   bytes32 public tokenDetails; 
-            9 
-            10  //transfer, transferFrom must respect the result of verifyTransfer
-            11  function verifyTransfer(address _from, address _to, uint256 _amount) view public returns (bool success);12 
-            13  //used to create tokens 
-            14  function mint(address _investor, uint256 _amount) public returns (bool success); 
-            15 }
+            /// @title IERCST Security Token Standard (EIP 1400)
+            /// @dev See https://github.com/SecurityTokenStandard/EIP-Spec
+
+            interface IERCST is IERCPFT {
+
+                // Document Management
+                function getDocument(bytes32 _name) external view returns (string, bytes32);
+                function setDocument(bytes32 _name, string _uri, bytes32 _documentHash) external;
+
+                // Controller Operation
+                function isControllable() external view returns (bool);
+
+                // Token Issuance
+                function isIssuable() external view returns (bool);
+                function issueByTranche(bytes32 _tranche, address _tokenHolder, uint256 _amount, bytes _data) external;
+                event IssuedByTranche(bytes32 indexed tranche, address indexed operator, address indexed to, uint256 amount, bytes data, bytes operatorData);
+
+                // Token Redemption
+                function redeemByTranche(bytes32 _tranche, uint256 _amount, bytes _data) external;
+                function operatorRedeemByTranche(bytes32 _tranche, address _tokenHolder, uint256 _amount, bytes _operatorData) external;
+                event RedeemedByTranche(bytes32 indexed tranche, address indexed operator, address indexed from, uint256 amount, bytes operatorData);
+
+                // Transfer Validity
+                function canSend(address _from, address _to, bytes32 _tranche, uint256 _amount, bytes _data) external view returns (byte, bytes32, bytes32);
+
+            }
+
+            /// @title ERC-1410 Partially Fungible Token Standard
+            /// @dev See https://github.com/SecurityTokenStandard/EIP-Spec
+
+            interface IERC1410 is IERC777 {
+
+                // Token Information
+                function balanceOfByTranche(bytes32 _tranche, address _tokenHolder) external view returns (uint256);
+                function tranchesOf(address _tokenHolder) external view returns (bytes32[]);
+
+                // Token Transfers
+                function sendByTranche(bytes32 _tranche, address _to, uint256 _amount, bytes _data) external returns (bytes32);
+                function sendByTranches(bytes32[] _tranches, address _to, uint256[] _amounts, bytes _data) external returns (bytes32[]);
+                function operatorSendByTranche(bytes32 _tranche, address _from, address _to, uint256 _amount, bytes _data, bytes _operatorData) external returns (bytes32);
+                function operatorSendByTranches(bytes32[] _tranches, address _from, address _to, uint256[] _amounts, bytes _data, bytes _operatorData) external returns (bytes32[]);
+
+                // Default Tranche Management
+                function getDefaultTranches(address _tokenHolder) external view returns (bytes32[]);
+                function setDefaultTranche(bytes32[] _tranches) external;
+
+                // Operators
+                function defaultOperatorsByTranche(bytes32 _tranche) external view returns (address[]);
+                function authorizeOperatorByTranche(bytes32 _tranche, address _operator) external;
+                function revokeOperatorByTranche(bytes32 _tranche, address _operator) external;
+                function isOperatorForTranche(bytes32 _tranche, address _operator, address _tokenHolder) external view returns (bool);
+
+                // Transfer Events
+                event SentByTranche(
+                    bytes32 indexed fromTranche,
+                    address operator,
+                    address indexed from,
+                    address indexed to,
+                    uint256 amount,
+                    bytes data,
+                    bytes operatorData
+                );
+
+                event ChangedTranche(
+                    bytes32 indexed fromTranche,
+                    bytes32 indexed toTranche,
+                    uint256 amount,
+                );
+
+                // Operator Events
+                event AuthorizedOperator(address indexed operator, address indexed tokenHolder);
+                event RevokedOperator(address indexed operator, address indexed tokenHolder);
+
+                event AuthorizedOperatorByTranche(bytes32 indexed tranche, address indexed operator, address indexed tokenHolder);
+                event RevokedOperatorByTranche(bytes32 indexed tranche, address indexed operator, address indexed tokenHolder);
+
+            }
           </code>
         </pre>
       </div>
@@ -233,15 +289,15 @@
       <br/>
       <div class="section-header-text">
         <p class="section-text">
-          The Security Token Standard started as an EIP draft written by
-          <a href="https://github.com/frozeman">@frozeman</a>,
-          <a href="hhttps://github.com/adamdossa">@adamdossa</a>,
-          <a href="https://github.com/pabloruiz55">@pabloruiz55</a>, and more at the
+          The Security Token Standard started as a draft written by
+          <a href="https://github.com/adamdossa">@adamdossa</a>,
+          <a href="https://github.com/pabloruiz55">@pabloruiz55</a>,
+          <a href="https://github.com/frozeman">@frozeman</a>, and more at the
           <a href="https://stroundtable.com">Security Token Roundtable</a>
           <br/>
-          <br/> This Security Token Standard has since moved out of beta and into a community formalized v1 spec, supported
+          <br/> This Security Token Standard has since moved out of beta and into a community formalized ERC, supported
           and endorsed by a large number of projects from across the crypto ecosystem and traditional security market participants.
-          This EIP wouldn't be possible without the time and dedication from a number of community members.
+          This ERC wouldn't be possible without the time and dedication from a number of community members.
         </p>
       </div>
       <!-- /.section-header-text -->
