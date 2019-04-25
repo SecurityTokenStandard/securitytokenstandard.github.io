@@ -1,492 +1,557 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="./favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="./favicon.ico">
 
-    <title>Security Token Standard</title>
+  <title>Security Token Standard</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Default Stylesheet -->
-    <link href="assets/css/app.css" rel="stylesheet" type="text/css"/>
+  <!-- Default Stylesheet -->
+  <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <main role="main">
 
-      <section class="text-center bg-poly">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-            <div class="col-lg-12">
-              <div id="bm" style="height:400px;"></div>
-              <h1 class="jumbotron-heading">Security Token Standard</h1>
-              <p>
-                <a class="btn btn-outline-light btn-lg my-2" href="https://github.com/securitytokenstandard" target="_blank">
-                  <i class="fab fa-github"></i>
-                  Github</a>
-                <a class="btn btn-outline-light btn-lg my-2" href="https://t.me/joinchat/FVjP7kY7D6EUX6GYsCEi1w" target="_blank">
-                  <i class="fab fa-telegram"></i>
-                  Join Telegram</a>
-              </p>
-            </div>
 
+  <main role="main">
+
+    <section class="text-center bg-poly">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-12">
+            <div id="bm" style="height:400px;"></div>
+            <h1 class="jumbotron-heading">Security Token Standard</h1>
+            <p>
+              <a class="btn btn-outline-light btn-lg my-2" href="https://github.com/securitytokenstandard"
+                target="_blank"><i class="fab fa-github"></i> Github</a>
+              <a class="btn btn-outline-light btn-lg my-2" href="https://t.me/joinchat/FVjP7kY7D6EUX6GYsCEi1w"
+                target="_blank"><i class="fab fa-telegram"></i> Join Telegram</a>
+            </p>
           </div>
 
         </div>
-      </section>
 
-      <div class="album py-5 bg-light">
+      </div>
+    </section>
 
-        <div class="container">
+    <div class="album py-5 bg-light">
 
-          <div class="row">
+      <div class="container">
 
-            <section id="what-is-securitytoken" class="section">
+        <div class="row">
 
-              <div class="container text-center">
-                <div class="section-header-text">
-                  <h3 class="display-5 text-uppercase">What is a Security Token?</h3>
-                  <p class="section-text">A Security Token shares many of the characteristics of both fungible (erc20) and non-fungible tokens (erc721). Security tokens are designed to represent complete or fractional ownership interests in assets and/or entities. While utility tokens have no limitations on who can send or receive the token, security tokens are subject to many restrictions based on identity, jurisdiction and asset category.
-                  </p>
+          <section id="what-is-securitytoken" class="section">
+
+            <div class="container text-center">
+              <div class="section-header-text">
+                <h3 class="display-5 text-uppercase">What is a Security Token?</h3>
+                <p class="section-text">A Security Token shares many of the characteristics of both fungible (erc20) and
+                  non-fungible
+                  tokens (erc721). Security tokens are designed to represent complete or fractional ownership interests
+                  in assets
+                  and/or entities. While utility tokens have no limitations on who can send or receive the token,
+                  security tokens
+                  are subject to many restrictions based on identity, jurisdiction and asset category.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+          <section id="sto-ico" class="section">
+            <div class="container text-center">
+
+              <div class="section-header-text">
+                <h3 class="display-5 text-uppercase">How do they differ from utility tokens?</h3>
+                <p class="section-text">The concept of utility tokens is fairly well understood in the blockchain space
+                  today. Utility
+                  tokens represent access to a network, and your token purchase represents the ability to buy goods or
+                  services from
+                  that network — kind of like purchasing a game token being used to play an arcade machine. Utility
+                  tokens give you
+                  that same type of access but just to a product or service.</p>
+                <p class="section-text">On the other hand, security tokens represent complete or fractional ownership in
+                  an asset
+                  (such as shares in a company, a real-estate asset, artwork, etc). Having a stake in a company, real
+                  estate,
+                  or intellectual property can all be represented by security tokens. Security tokens offer the benefit
+                  of bringing
+                  significant transparency over traditional paper shares through the use of the blockchain and its
+                  associated public
+                  ledger. Security token structure, distribution, or changes that could affect investors are now
+                  accessible to all
+                  via the blockchain.</p>
+
+                <p class="section-text"> Security tokens and the digitalised assets they represent ownership will form
+                  the backbone of
+                  finance 3.0 driving innovation, adoption and accessibility across the financial sector.
+                </p>
+              </div>
+
+
+          </section>
+
+          <section id="with-standard" class="section">
+            <div class="container text-center">
+
+              <div class="section-header-text">
+                <h3 class="display-5 text-uppercase">Without A Standard</h3>
+                <p class="section-text">Security Tokens will never be adopted in any meaningful way if issuers,
+                  investors, KYC providers,
+                  wallets, exchanges, regulators and developers cannot work together within the same framework.
+                </p>
+              </div>
+              <!-- /.section-header-text -->
+
+              <div id="erc-20-columns" class="columns">
+                <div class="column">
+                  <div class="text-center">
+                    <img src="assets/img/failure1.gif" width="90%" />
+                  </div>
+                </div>
+              </div>
+              <!-- /.columns -->
+
+          </section>
+
+
+          <section id="without-standard" class="section">
+            <div class="container text-center">
+
+              <div class="section-header-text">
+                <h3 class="display-5 text-uppercase">With A Standard</h3>
+                <p class="section-text">Security Tokens can become the default form for all financial securities. In the
+                  same way
+                  that the ERC-20 standard helped to create the boom in utility tokens, the security token standard will
+                  help drive
+                  the boom in security tokens. All participants in the ecosystem will be able to speak the same language
+                  and become
+                  confident building on this new and exciting technology.
+                </p>
+              </div>
+              <!-- /.section-header-text -->
+
+              <figure>
+                <div id="bm2"> </div>
+              </figure>
+              <!-- /.columns -->
+
+            </div>
+            <!-- /.container -->
+          </section>
+
+          <section id="without-standard" class="section">
+            <div class="container text-center">
+
+              <div class="section-header-text">
+                <h3 class="display-5 text-uppercase">Security Token Roundtable</h3>
+                <p class="section-text">
+                  The Security Token Roundtable was held to drive forward the conversation around technical, legal &
+                  regulatory opportunities
+                  and challenges associated with issuing, lifecycle events and the trading of securities on public
+                  ledgers. Building
+                  standards in this space provides the bedrock needed to ramp up adoption and establish regulatory
+                  compliance in
+                  this massive and emerging use-case for blockchain based public ledgers.
+
+                  <a href="https://blog.polymath.network/security-token-roundtable-recap-30e7d371cf14"
+                    target="_blank">Click here
+                    to read more</a>
+                </p>
+                <div class="video-container">
+                  <iframe src="https://player.vimeo.com/video/281140093" width="640" height="360" frameborder="0"
+                    allowfullscreen></iframe>
                 </div>
 
               </div>
+              <!-- /.section-header-text -->
 
-            </section>
-            <section id="sto-ico" class="section">
-              <div class="container text-center">
+              <figure>
+                <div id="bm2"> </div>
+              </figure>
+              <!-- /.columns -->
 
-                <div class="section-header-text">
-                  <h3 class="display-5 text-uppercase">How do they differ from utility tokens?</h3>
-                  <p class="section-text">The concept of utility tokens is fairly well understood in the blockchain space today. Utility tokens represent access to a network, and your token purchase represents the ability to buy goods or services from that network — kind of like purchasing a game token being used to play an arcade machine. Utility tokens give you that same type of access but just to a product or service.</p>
-                  <p class="section-text">On the other hand, security tokens represent complete or fractional ownership in an asset (such as shares in a company, a real-estate asset, artwork, etc). Having a stake in a company, real estate, or intellectual property can all be represented by security tokens. Security tokens offer the benefit of bringing significant transparency over traditional paper shares through the use of the blockchain and its associated public ledger. Security token structure, distribution, or changes that could affect investors are now accessible to all via the blockchain.</p>
+            </div>
+            <!-- /.container -->
+          </section>
 
-                  <p class="section-text">
-                    Security tokens and the digitalised assets they represent ownership will form the backbone of finance 3.0 driving innovation, adoption and accessibility across the financial sector.
-                  </p>
-                </div>
+          <section id="interface-spec" class="section">
+            <div class="container">
+              <div class="text-center">
+                <h3 class="section-subheader">ERC 1400 - Security Token Standard</h3>
+                <p class="section-text">A proposed standard for security tokens - incorporating differentiated
+                  ownership, error signalling,
+                  document references, gate keeper (operator) access control and issuance / redemption semantics.</p>
 
-              </section>
+                <p class="section-text">
+                  Authors:
+                  <a href="https://github.com/adamdossa" target="_blank">Adam Dossa</a>,
+                  <a href="https://github.com/pabloruiz55" target="_blank">Pablo Ruiz</a>,
+                  <a href="https://github.com/thegostep" target="_blank">Stephane Gosselin</a>,
+                  <a href="https://github.com/frozeman" target="_blank">Fabian Vogelsteller</a>
+                </p>
 
-              <section id="with-standard" class="section">
-                <div class="container text-center">
+                <p class="section-text">
+                  <a href="https://github.com/ethereum/EIPs/issues/1411" target="_blank">ERC 1400 - Security Token
+                    Standard</a>
+                </p>
+                <p class="section-text">
+                  <a href="https://github.com/ethereum/EIPs/issues/1410" target="_blank">ERC 1410 - Partially Fungible
+                    Token Standard</a>
+                </p>
+                </p>
+              </div>
+              <!-- /.section-header-text -->
 
-                  <div class="section-header-text">
-                    <h3 class="display-5 text-uppercase">Without A Standard</h3>
-                    <p class="section-text">Security Tokens will never be adopted in any meaningful way if issuers, investors, KYC providers, wallets, exchanges, regulators and developers cannot work together within the same framework.
-                    </p>
-                  </div>
-                  <!-- /.section-header-text -->
 
-                  <div id="erc-20-columns" class="columns">
-                    <div class="column">
-                      <div class="text-center">
-                        <img src="assets/img/failure1.gif" width="90%"/>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.columns -->
 
-                </section>
-
-                <section id="without-standard" class="section">
-                  <div class="container text-center">
-
-                    <div class="section-header-text">
-                      <h3 class="display-5 text-uppercase">With A Standard</h3>
-                      <p class="section-text">Security Tokens can become the default form for all financial securities. In the same way that the ERC-20 standard helped to create the boom in utility tokens, the security token standard will help drive the boom in security tokens. All participants in the ecosystem will be able to speak the same language and become confident building on this new and exciting technology.
-                      </p>
-                    </div>
-                    <!-- /.section-header-text -->
-
-                    <figure>
-                      <div id="bm2"></div>
-                    </figure>
-                    <!-- /.columns -->
-
-                  </div>
-                  <!-- /.container -->
-                </section>
-
-                <section id="without-standard" class="section">
-                  <div class="container text-center">
-
-                    <div class="section-header-text">
-                      <h3 class="display-5 text-uppercase">Security Token Roundtable</h3>
-                      <p class="section-text">
-                        The Security Token Roundtable was held to drive forward the conversation around technical, legal & regulatory opportunities and challenges associated with issuing, lifecycle events and the trading of securities on public ledgers. Building standards in this space provides the bedrock needed to ramp up adoption and establish regulatory compliance in this massive and emerging use-case for blockchain based public ledgers.
-
-                        <a href="https://blog.polymath.network/security-token-roundtable-recap-30e7d371cf14" target="_blank">Click here to read more</a>
-                      </p>
-                      <div class="video-container">
-                        <iframe src="https://player.vimeo.com/video/281140093" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                      </div>
-
-                    </div>
-                    <!-- /.section-header-text -->
-
-                    <figure>
-                      <div id="bm2"></div>
-                    </figure>
-                    <!-- /.columns -->
-
-                  </div>
-                  <!-- /.container -->
-                </section>
-
-                <section id="interface-spec" class="section">
-                  <div class="container">
-                    <div class="text-center">
-                      <h3 class="section-subheader">ERC 1400 - Security Token Standard</h3>
-                      <p class="section-text">A proposed standard for security tokens - incorporating differentiated ownership, error signalling, document references, gate keeper (operator) access control and issuance / redemption semantics.</p>
-
-                      <p class="section-text">
-                        Authors:
-                        <a href="https://github.com/adamdossa" target="_blank">Adam Dossa</a>,
-                        <a href="https://github.com/pabloruiz55" target="_blank">Pablo Ruiz</a>,
-                        <a href="https://github.com/thegostep" target="_blank">Stephane Gosselin</a>,
-                        <a href="https://github.com/frozeman" target="_blank">Fabian Vogelsteller</a>
-                      </p>
-
-                      <p class="section-text">
-                        <a href="https://github.com/ethereum/EIPs/issues/1411" target="_blank">ERC 1400 - Security Token Standard</a>
-                      </p>
-                      <p class="section-text">
-                        <a href="https://github.com/ethereum/EIPs/issues/1410" target="_blank">ERC 1410 - Partially Fungible Token Standard</a>
-                      </p>
-                    </p>
-                  </div>
-                  <!-- /.section-header-text -->
-
-                  <div class="container">
-                    <pre>
+              <div class="container">
+                <pre>
                               <code class="javascript">
-/// @title iercst security token standard (eip 1400)
-/// @dev see https://github.com/securitytokenstandard/eip-spec
+/// @title IERCST Security Token Standard (EIP 1400)
+/// @dev See https://github.com/SecurityTokenStandard/EIP-Spec
 
-interface iercst is iercpft {
+interface IERCST is IERCPFT {
 
-    // document management
-    function getdocument(bytes32 _name) external view returns (string, bytes32);
-    function setdocument(bytes32 _name, string _uri, bytes32 _documenthash) external;
+    // Document Management
+    function getDocument(bytes32 _name) external view returns (string, bytes32);
+    function setDocument(bytes32 _name, string _uri, bytes32 _documentHash) external;
 
-    // controller operation
-    function iscontrollable() external view returns (bool);
+    // Controller Operation
+    function isControllable() external view returns (bool);
 
-    // token issuance
-    function isissuable() external view returns (bool);
-    function issuebytranche(bytes32 _tranche, address _tokenholder, uint256 _amount, bytes _data) external;
-    event issuedbytranche(bytes32 indexed tranche, address indexed operator, address indexed to, uint256 amount, bytes data, bytes operatordata);
+    // Token Issuance
+    function isIssuable() external view returns (bool);
+    function issueByTranche(bytes32 _tranche, address _tokenHolder, uint256 _amount, bytes _data) external;
+    event IssuedByTranche(bytes32 indexed tranche, address indexed operator, address indexed to, uint256 amount, bytes data, bytes operatorData);
 
-    // token redemption
-    function redeembytranche(bytes32 _tranche, uint256 _amount, bytes _data) external;
-    function operatorredeembytranche(bytes32 _tranche, address _tokenholder, uint256 _amount, bytes _operatordata) external;
-    event redeemedbytranche(bytes32 indexed tranche, address indexed operator, address indexed from, uint256 amount, bytes operatordata);
+    // Token Redemption
+    function redeemByTranche(bytes32 _tranche, uint256 _amount, bytes _data) external;
+    function operatorRedeemByTranche(bytes32 _tranche, address _tokenHolder, uint256 _amount, bytes _operatorData) external;
+    event RedeemedByTranche(bytes32 indexed tranche, address indexed operator, address indexed from, uint256 amount, bytes operatorData);
 
-    // transfer validity
-    function cansend(address _from, address _to, bytes32 _tranche, uint256 _amount, bytes _data) external view returns (byte, bytes32, bytes32);
+    // Transfer Validity
+    function canSend(address _from, address _to, bytes32 _tranche, uint256 _amount, bytes _data) external view returns (byte, bytes32, bytes32);
 
 }
 
-/// @title erc-1410 partially fungible token standard
-/// @dev see https://github.com/securitytokenstandard/eip-spec
+/// @title ERC-1410 Partially Fungible Token Standard
+/// @dev See https://github.com/SecurityTokenStandard/EIP-Spec
 
-interface ierc1410 is ierc777 {
+interface IERC1410 is IERC777 {
 
-    // token information
-    function balanceofbytranche(bytes32 _tranche, address _tokenholder) external view returns (uint256);
-    function tranchesof(address _tokenholder) external view returns (bytes32[]);
+    // Token Information
+    function balanceOfByTranche(bytes32 _tranche, address _tokenHolder) external view returns (uint256);
+    function tranchesOf(address _tokenHolder) external view returns (bytes32[]);
 
-    // token transfers
-    function sendbytranche(bytes32 _tranche, address _to, uint256 _amount, bytes _data) external returns (bytes32);
-    function sendbytranches(bytes32[] _tranches, address _to, uint256[] _amounts, bytes _data) external returns (bytes32[]);
-    function operatorsendbytranche(bytes32 _tranche, address _from, address _to, uint256 _amount, bytes _data, bytes _operatordata) external returns (bytes32);
-    function operatorsendbytranches(bytes32[] _tranches, address _from, address _to, uint256[] _amounts, bytes _data, bytes _operatordata) external returns (bytes32[]);
+    // Token Transfers
+    function sendByTranche(bytes32 _tranche, address _to, uint256 _amount, bytes _data) external returns (bytes32);
+    function sendByTranches(bytes32[] _tranches, address _to, uint256[] _amounts, bytes _data) external returns (bytes32[]);
+    function operatorSendByTranche(bytes32 _tranche, address _from, address _to, uint256 _amount, bytes _data, bytes _operatorData) external returns (bytes32);
+    function operatorSendByTranches(bytes32[] _tranches, address _from, address _to, uint256[] _amounts, bytes _data, bytes _operatorData) external returns (bytes32[]);
 
-    // default tranche management
-    function getdefaulttranches(address _tokenholder) external view returns (bytes32[]);
-    function setdefaulttranche(bytes32[] _tranches) external;
+    // Default Tranche Management
+    function getDefaultTranches(address _tokenHolder) external view returns (bytes32[]);
+    function setDefaultTranche(bytes32[] _tranches) external;
 
-    // operators
-    function defaultoperatorsbytranche(bytes32 _tranche) external view returns (address[]);
-    function authorizeoperatorbytranche(bytes32 _tranche, address _operator) external;
-    function revokeoperatorbytranche(bytes32 _tranche, address _operator) external;
-    function isoperatorfortranche(bytes32 _tranche, address _operator, address _tokenholder) external view returns (bool);
+    // Operators
+    function defaultOperatorsByTranche(bytes32 _tranche) external view returns (address[]);
+    function authorizeOperatorByTranche(bytes32 _tranche, address _operator) external;
+    function revokeOperatorByTranche(bytes32 _tranche, address _operator) external;
+    function isOperatorForTranche(bytes32 _tranche, address _operator, address _tokenHolder) external view returns (bool);
 
-    // transfer events
-    event sentbytranche(
-        bytes32 indexed fromtranche,
+    // Transfer Events
+    event SentByTranche(
+        bytes32 indexed fromTranche,
         address operator,
         address indexed from,
         address indexed to,
         uint256 amount,
         bytes data,
-        bytes operatordata
+        bytes operatorData
     );
 
-    event changedtranche(
-        bytes32 indexed fromtranche,
-        bytes32 indexed totranche,
+    event ChangedTranche(
+        bytes32 indexed fromTranche,
+        bytes32 indexed toTranche,
         uint256 amount,
     );
 
-    // operator events
-    event authorizedoperator(address indexed operator, address indexed tokenholder);
-    event revokedoperator(address indexed operator, address indexed tokenholder);
+    // Operator Events
+    event AuthorizedOperator(address indexed operator, address indexed tokenHolder);
+    event RevokedOperator(address indexed operator, address indexed tokenHolder);
 
-    event authorizedoperatorbytranche(bytes32 indexed tranche, address indexed operator, address indexed tokenholder);
-    event revokedoperatorbytranche(bytes32 indexed tranche, address indexed operator, address indexed tokenholder);
+    event AuthorizedOperatorByTranche(bytes32 indexed tranche, address indexed operator, address indexed tokenHolder);
+    event RevokedOperatorByTranche(bytes32 indexed tranche, address indexed operator, address indexed tokenHolder);
 
 }
                               </code>
                             </pre>
-                  </div>
+              </div>
 
-                  <div class="section-header-text">
-                    <p class="text-center">
-                      The Security Token Standard started as a draft written by
-                      <a href="https://github.com/adamdossa" target="_blank">@adamdossa</a>,
-                      <a href="https://github.com/pabloruiz55" target="_blank">@pabloruiz55</a>,
-                      <a href="https://github.com/frozeman" target="_blank">@frozeman</a>, and more at the
-                      <a href="https://stroundtable.com" target="_blank">Security Token Roundtable</a>
-                      <br/>
-                      <br/>
-                      This Security Token Standard has since moved out of beta and into a community formalized ERC, supported and endorsed by a large number of projects from across the crypto ecosystem and traditional security market participants. This ERC wouldn't be possible without the time and dedication from a number of community members.
-                    </p>
-                  </div>
-                  <!-- /.section-header-text -->
+
+              <div class="section-header-text">
+                <p class="text-center">
+                  The Security Token Standard started as a draft written by
+                  <a href="https://github.com/adamdossa" target="_blank">@adamdossa</a>,
+                  <a href="https://github.com/pabloruiz55" target="_blank">@pabloruiz55</a>,
+                  <a href="https://github.com/frozeman" target="_blank">@frozeman</a>, and more at the
+                  <a href="https://stroundtable.com" target="_blank">Security Token Roundtable</a>
+                  <br />
+                  <br /> This Security Token Standard has since moved out of beta and into a community formalized ERC,
+                  supported
+                  and endorsed by a large number of projects from across the crypto ecosystem and traditional security
+                  market participants.
+                  This ERC wouldn't be possible without the time and dedication from a number of community members.
+                </p>
+              </div>
+              <!-- /.section-header-text -->
+            </div>
+            <!-- /.container -->
+          </section>
+
+          <section id="supporters" class="section">
+            <div class="text-center">
+              <div class="section-header-text">
+                <h1 class="display-5 text-uppercase">Security Token Standard Supporters</h1>
+
+                <p class='lead'>Projects Supporting the Security Token Standard</p>
+              </div>
+              <!-- /.section-header-text -->
+
+              <div class="row">
+                <div class="col-3">
+                  <a href="https://www.polymath.network" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/bull.png" />
+                    </div>
+                  </a>
+                  <p>Polymath</p>
                 </div>
-                <!-- /.container -->
-              </section>
-
-              <section id="supporters" class="section">
-                <div class="text-center">
-                  <div class="section-header-text">
-                    <h1 class="display-5 text-uppercase">Security Token Standard Supporters</h1>
-
-                    <p class='lead'>Projects Supporting the Security Token Standard</p>
-                  </div>
-                  <!-- /.section-header-text -->
-
-                  <div class="row">
-                    <div class="col-3">
-                      <a href="https://www.polymath.network" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/bull.png"/>
-                        </div>
-                      </a>
-                      <p>Polymath</p>
+                <div class="col-3">
+                  <a href="https://www.perkinscoie.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/perkins.png" />
                     </div>
-                    <div class="col-3">
-                      <a href="https://www.perkinscoie.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/perkins.png"/>
-                        </div>
-                      </a>
-                      <p>Perkins Coie, LLP</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="http://www.openfinance.io" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/open-finance.png"/>
-                        </div>
-                      </a>
-                      <p>OpenFinance</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://www.chronologic.network" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/chronologic.png"/>
-                        </div>
-                      </a>
-                      <p>Chronologic</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://www.vertalo.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/vertalo-logo.png"/>
-                        </div>
-                      </a>
-                      <p>Vertalo</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://blakes.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/blakes-logo.png"/>
-                        </div>
-                      </a>
-                      <p>Blakes</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="http://www.vstocktransfer.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" width="200" src="assets/img/vstock.png"/>
-                        </div>
-                      </a>
-                      <p>VStock Transfer</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://primetrust.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" width="200" src="assets/img/prime-trust.png"/>
-                        </div>
-                      </a>
-                      <p>PrimeTrust</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://identitymindglobal.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/identitymind.png"/>
-                        </div>
-                      </a>
-                      <p>IdentityMind</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://netki.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/netki-logo.png"/>
-                        </div>
-                      </a>
-                      <p>Netki</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://goldmoney.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/goldmoney.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Goldmoney</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://tokeny.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/tokeny.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Tokeny</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://securitize.io/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/securitize.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Securitize</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://celebrusadvisory.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/celebrus.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Celebrus</p>
-                    </div>
-                    <!-- <div class="col-3"> <a href="http://www.nystx.com//"> <div class="d-flex justify-content-center align-items-center sponsor-image"> <img class="img-fluid" src="assets/img/nystx.png" /> </div> </a> <p class="text-muted">NYSTX</p> </div> -->
-                    <div class="col-3">
-                      <a href="https://token.security/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/stn_logo.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Security Token Network</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://www.blocklime.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/Blocklime.svg"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Blocklime</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://www.verifyinvestor.com/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/verifyinvestor.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Verify Investor</p>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://www.holdex.io/" target="_blank">
-                        <div class="d-flex justify-content-center align-items-center sponsor-image">
-                          <img class="img-fluid" src="assets/img/holdex.png"/>
-                        </div>
-                      </a>
-                      <p class="text-muted">Holdex</p>
-                    </div>
-                  </div>
-                  <!-- /.columns -->
-
+                  </a>
+                  <p>Perkins Coie, LLP</p>
                 </div>
-                <!-- /.container -->
-              </section>
+                <div class="col-3">
+                  <a href="http://www.openfinance.io" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/open-finance.png" />
+                    </div>
+                  </a>
+                  <p>OpenFinance</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://www.chronologic.network" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/chronologic.png" />
+                    </div>
+                  </a>
+                  <p>Chronologic</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://www.vertalo.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/vertalo-logo.png" />
+                    </div>
+                  </a>
+                  <p>Vertalo</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://blakes.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/blakes-logo.png" />
+                    </div>
+                  </a>
+                  <p>Blakes</p>
+                </div>
+                <div class="col-3">
+                  <a href="http://www.vstocktransfer.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" width="200" src="assets/img/vstock.png" />
+                    </div>
+                  </a>
+                  <p>VStock Transfer</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://primetrust.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" width="200" src="assets/img/prime-trust.png" />
+                    </div>
+                  </a>
+                  <p>PrimeTrust</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://identitymindglobal.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/identitymind.png" />
+                    </div>
+                  </a>
+                  <p>IdentityMind</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://netki.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/netki-logo.png" />
+                    </div>
+                  </a>
+                  <p>Netki</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://goldmoney.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/goldmoney.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Goldmoney</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://tokeny.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/tokeny.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Tokeny</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://securitize.io/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/securitize.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Securitize</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://celebrusadvisory.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/celebrus.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Celebrus</p>
+                </div>
+                <!-- <div class="col-3">
+                                <a href="http://www.nystx.com//">
+                                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                                            <img class="img-fluid" src="assets/img/nystx.png" />
+                                    </div>
+                                </a>
+                                <p class="text-muted">NYSTX</p>
+                            </div> -->
+                <div class="col-3">
+                  <a href="https://token.security/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/stn_logo.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Security Token Network</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://www.blocklime.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/Blocklime.svg" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Blocklime</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://www.verifyinvestor.com/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/verifyinvestor.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Verify Investor</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://www.holdex.io/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/holdex.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">Holdex</p>
+                </div>
+                <div class="col-3">
+                  <a href="https://iestate.de/" target="_blank">
+                    <div class="d-flex justify-content-center align-items-center sponsor-image">
+                      <img class="img-fluid" src="assets/img/iestate.png" />
+                    </div>
+                  </a>
+                  <p class="text-muted">iEstate</p>
+                </div>
+              </div>
+              <!-- /.columns -->
 
             </div>
-          </div>
+            <!-- /.container -->
+          </section>
+
         </div>
+      </div>
+    </div>
 
-        <section class="jumbotron text-center bg-poly">
-          <div class="container">
-            <h3 class="jumbotron-heading">Start Contributing to the Security Token Standard</h3>
-            <p>
-              <a class="btn btn-outline-light btn-lg my-2" href="https://github.com/securitytokenstandard" target="_blank">
-                <i class="fab fa-github"></i>
-                View Guidelines</a>
-            </p>
-          </div>
-        </section>
+    <section class="jumbotron text-center bg-poly">
+      <div class="container">
+        <h3 class="jumbotron-heading">Start Contributing to the Security Token Standard</h3>
+        <p>
+          <a class="btn btn-outline-light btn-lg my-2" href="https://github.com/securitytokenstandard"
+            target="_blank"><i class="fab fa-github"></i> View Guidelines</a>
+        </p>
+      </div>
+    </section>
 
-      </main>
+  </main>
 
-      <footer class="text-muted bg-dark">
-        <div class="container">
-          <p class="text-center">Sponsored by
-            <a href="https://polymath.network" target="_blank">Polymath</a>
-          </p>
-        </div>
-      </footer>
+  <footer class="text-muted bg-dark">
+    <div class="container">
+      <p class="text-center">Sponsored by <a href="https://polymath.network" target="_blank">Polymath</a></p>
+    </div>
+  </footer>
 
-      <!-- Bootstrap core JavaScript ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/js/app.js"></script>
-      <script src="assets/js/vendor.js"></script>
-      <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-103883877-4"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-103883877-4');
-      </script>
-
-      <!-- <script> hljs.registerLanguage('solidity', window.hljsDefineSolidity); hljs.initHighlightingOnLoad(); </script> -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/highlightjs-solidity@1.0.5/solidity.min.js"></script>
-      <!-- <script>hljs.initHighlightingOnLoad();</script> -->
-      <script>
-        hljs.configure({style: 'atom-one-dark'});
-        // hljs.registerLanguage('solidity', window.hljsDefineSolidity);
-        // hljs.registerLanguage('javascript', javascript);
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/vendor.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98720122-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-98720122-2');
+  </script>
+  <!-- <script>
+        hljs.registerLanguage('solidity', window.hljsDefineSolidity);
         hljs.initHighlightingOnLoad();
-      </script>
-    </body>
+    </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-solidity@1.0.5/solidity.min.js"></script>
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+  <script>
+    hljs.configure({ style: 'atom-one-dark' });
+    // hljs.registerLanguage('solidity', window.hljsDefineSolidity);
+    // hljs.registerLanguage('javascript', javascript);
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
 
-  </html>
+</html>
